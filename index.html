@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pong Moderno</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>🏓 Pong </h1>
+  
+
+  <div class="mode-select">
+    <h2>Selecciona modo de juego</h2>
+    <button id="twoPlayersBtn">2 Jugadores</button>
+    <button id="vsComputerBtn">Jugador vs Computadora</button>
+  </div>
+
+
+  <div class="level-select" style="display:none;">
+    <h2>Selecciona dificultad</h2>
+    <button data-level="easy">Fácil</button>
+    <button data-level="medium">Intermedio</button>
+    <button data-level="hard">Difícil</button>
+  </div>
+
+
+  <div class="game-container" style="display:none; position:relative;">
+    <canvas id="pongCanvas"></canvas>
+    <div class="score">
+      <span id="player1">0</span> : <span id="player2">0</span>
+    </div>
+
+    <div class="winner-screen" style="display:none;">
+        <h2 id="winnerText"></h2>
+        <button id="restartBtn">Reiniciar Juego</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
